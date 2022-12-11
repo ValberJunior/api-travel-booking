@@ -21,7 +21,7 @@ mongoose.connect(MONGO_URL,
 app.use(cors(whiteList));
 
 // trips 
-app.use('/viagens',express.urlencoded({extended: true}), tripsRouter);
+app.use('/trips',express.urlencoded({extended: true}), tripsRouter);
 
 // user
 app.use('/user',express.json(), userRouter);
